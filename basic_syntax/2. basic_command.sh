@@ -30,4 +30,23 @@ git checkout 커밋ID
 # 특정 브랜치로의 전환환
 git checkout 브랜치명
 
+# pull은 원격의 변경사항을 local로 내려받는 것(fetch + merge)
+git pull origin main
+
+# fetch는 변경사항을 local로 가져오되 병합은 하지 않는 것
+git fetch origin main
+# 만약 모든 브랜치의 변경사항을 가져오려면
+git fetch --all
+# 버전별(commit 간) 비교 명령어
+git diff A B
+git diff commitID1 commitID2
+git diff 브랜지1 브랜치2
+
+# 마지막 commit 취소
+git reset HEAD~1
+git reset HEAD^
+
+# 이미 push된 commit 사항 되돌리는(완전한 취소 X) commitID 생성
+git revert 커밋ID
+
 # 
